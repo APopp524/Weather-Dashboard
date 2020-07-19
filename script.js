@@ -1,6 +1,7 @@
 //search for city function//
 function searchCity(cityname) {
 
+    //openweathermap.org APIs//
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=934c1a5b2b885889eda3181f27a45d02";
     var queryURLforcast = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityname + "&units=imperial&appid=934c1a5b2b885889eda3181f27a45d02";
 
@@ -58,12 +59,12 @@ function searchCity(cityname) {
                         url: queryURLUV,
                         method: 'GET'
                     }).then(function (response) {
-                        $('#uvl-display').empty();
+                        $('#uv-index').empty();
                         var uvlresults = response.value;
                         //create HTML for new div
                         var uvlEl = $("<button class='btn bg-success'>").text("UV Index: " + response.value);
                 
-                        $('#uvl-display').html(uvlEl);
+                        $('#uv-index').html(uvlEl);
                 
                     });
                 });

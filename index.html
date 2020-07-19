@@ -14,9 +14,11 @@
   </head>
 
   <body>
-    <div class="container-fluid text-center text-light bg-primary">
+      <!--Header Bar-->
+    <div class="container-fluid text-center bg-primary">
         <h1>Weather Dashboard</h1>
     </div>
+        <!--Side bar with search button and search history-->
         <div class="container">
             <div class="clearfix">
                 <div class="col-4 float-left">
@@ -30,17 +32,19 @@
                         </form>
                     </nav>
                 </div>
-                <!--Up to date weather for he selected city-->
+
+                <!--Up to date weather for the selected city-->
                 <div class="col-8 float-right">
                     <div class="card bg-light text-dark p-2 rem shadow-lg p-3 mb-5 bg-white rounded" style="width: 710; height: 19rem;">
                         <div id="current"></div>
-                        <div id="uvl-display"></div>
+                        <div id="uv-index"></div>
                     </div>
-                        <br>
-                        <!--Five day forcast for the selected city-->
-                        <h2>Five Day Forcast</h2>
-                    <div  id="fiveDay" class="row">
+
+                    <!--Five day forcast for the selected city-->
+                    <h2>Five Day Forcast</h2>
+                    <div id="fiveDay" class="row">
                     </div>
+
                 </div> 
             </div>
         </div>
@@ -48,5 +52,6 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>
